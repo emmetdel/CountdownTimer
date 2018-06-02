@@ -20,7 +20,7 @@
     <h3 id="error-message"></h3>
 
     <section id="main-timer">
-      <input type="number" id="timer-input" placeholder="10">
+      <input type="number" id="timer-input" placeholder="10" maxlength="3" onkeypress="return isNumberKey(event)">
       <div id="dot-container">
         <div id="circle-dot"></div>
       </div>

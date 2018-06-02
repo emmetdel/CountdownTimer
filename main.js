@@ -106,3 +106,10 @@ function reset() {
   timerInput.focus();
   timerFinish();
 }
+
+function isNumberKey(e) {
+  if (timerInput.value.length == 3) {
+    e.preventDefault();
+    return;
+  }
+}
