@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Countdown Timer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+
+  <div id="container">
+
+    <h1>Countdowner</h1>
+    <h3 id="error-message"></h3>
+
+    <section id="main-timer">
+      <input type="number" id="timer-input" placeholder="10">
+      <div id="dot-container">
+        <div id="circle-dot"></div>
+      </div>
+    </section>
+
+    <section id="action-buttons">
+      <input type="button" value="Start" id="startBtn">
+      <input type="button" value="Stop" id="stopBtn" style="display: none;">
+      <input type="button" value="Clear" id="clearBtn" style="display: none;">
+
+    </section>
+
+  </div>
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

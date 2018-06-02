@@ -1,0 +1,121 @@
+html {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+body,
+#container,
+#main-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+#container {
+  flex-direction: column;
+}
+
+#time {
+  font-size: 2rem;
+  color: white;
+}
+
+#dot-container {
+  height: 10px;
+  width: 150px;
+  transform-origin: 100%;
+  position: absolute;
+  right: 50%;
+  transform: rotate(90deg);
+  transition: all 0.1s;
+  transition-timing-function: ease-out;
+}
+
+#circle-dot {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#main-timer {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-bottom: 35px;
+  -webkit-box-shadow: inset 0px 0px 0px 9.5px #fbc2eb;
+  -moz-box-shadow: inset 0px 0px 0px 9.5px #fbc2eb;
+  box-shadow: inset 0px 0px 0px 9.5px #fbc2eb;
+}
+
+.timer-finish {
+  border: 2px solid magenta;
+  transition: all 0.2s;
+  transition-timing-function: ease-in;
+}
+
+#timer-input {
+  background-color: transparent;
+  border: none;
+}
+
+#countdown {
+  color: white;
+  font-size: 3.5rem;
+}
+
+#action-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 12.5rem;
+}
+
+input[type="button"] {
+  width: 6rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border: #fbc2eb solid 2px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+input[type="button"]:focus {
+  border: #a18cd1 solid 3px;
+}
+
+input[type="number"]:hover {
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  color: white;
+  font-size: 8rem;
+  max-width: 300px;
+  text-align: center;
+}
+
+input[type="number"]:focus {
+  border: 1px solid red;
+}
+
+#error-message {
+  color: red;
+  font-style: italic;
+}
